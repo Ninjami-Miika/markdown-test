@@ -11,8 +11,8 @@ To use the API, a valid *access token* is needed. It can be retrieved from authe
 | ------ | ----------------- | ---------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `GET`    | *v1/orders*       | List all/filtered orders.                                  | [GET v1/orders](#user-content-get-v1orders--list-orders)          |
 | `GET`    | *v1/orders/\<id>*  | Show details of a order.                                   | [GET v1/orders/\<id>](#user-content-get-v1ordersid--show-order-details)   |
-| `POST`   | *v1/orders/offer* | Get a starting price for a drive for given route and time. | [POST v1/orders/offer](#user-content-post-v1ordersoffer-–-get-a-starting-price) |
-| `POST`   | *v1/orders*       | Store a new order.                                         | [POST v1/orders](#user-content-post-v1orders-–-create-order)       |
+| `POST`   | *v1/orders/offer* | Get a starting price for a drive for given route and time. | [POST v1/orders/offer](#user-content-post-v1ordersoffer--get-a-starting-price) |
+| `POST`   | *v1/orders*       | Store a new order.                                         | [POST v1/orders](user-content-post-v1orders--create-order)       |
 
 
 # Reading this document
