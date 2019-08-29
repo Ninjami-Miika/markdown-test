@@ -49,8 +49,7 @@ By default, all parameters in requests are required. Optional parameters are wra
     "car_model": "Corolla",
     "created_at": "2016-08-25T18:57:01.000000+03:00"
   },
-  // {...},
-  // {...}
+  /* {...} */
 ]
 ```
 
