@@ -49,7 +49,16 @@ By default, all parameters in requests are required. Optional parameters are wra
     "car_model": "Corolla",
     "created_at": "2016-08-25T18:57:01.000000+03:00"
   },
-  /* {...} */
+  {
+    "id": 1338,
+    "customer_name": "Heikki Heikäläinen",
+    "customer_phone": "0412345678",
+    "status": "CONFIRMED",
+    "car_reg": "LOL-112",
+    "car_brand": "Opel",
+    "car_model": "Astra",
+    "created_at": "2019-03-03T12:24:41.000000+03:00"
+  }
 ]
 ```
 
