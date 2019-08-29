@@ -40,17 +40,17 @@ By default, all parameters in requests are required. Optional parameters are wra
 ```json
 [
   {
-    id: 1337,
-    customer_name: "Matti Meikäläinen",
-    customer_phone: "0401234567",
-    status: "DONE",
-    car_reg: "ABC-123",
-    car_brand: "Toyota",
-    car_model: "Corolla",
-    created_at: "2016-08-25T18:57:01.000000+03:00"
+    "id": 1337,
+    "customer_name": "Matti Meikäläinen",
+    "customer_phone": "0401234567",
+    "status": "DONE",
+    "car_reg": "ABC-123",
+    "car_brand": "Toyota",
+    "car_model": "Corolla",
+    "created_at": "2016-08-25T18:57:01.000000+03:00"
   },
-  {...},
-  {...}
+  // {...},
+  // {...}
 ]
 ```
 
