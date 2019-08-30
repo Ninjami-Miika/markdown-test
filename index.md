@@ -13,6 +13,7 @@ To use the API, a valid *access token* is needed. It can be retrieved from authe
 | `GET`    | *v1/orders/\<id>*  | Show details of a order.                                   | [GET v1/orders/\<id>](#get-v1ordersid--show-order-details)   |
 | `POST`   | *v1/orders/offer* | Get a starting price for a drive for given route and time. | [POST v1/orders/offer](#post-v1ordersoffer--get-a-starting-price) |
 | `POST`   | *v1/orders*       | Store a new order.                                         | [POST v1/orders](#post-v1orders--create-order)       |
+| `GET`   | *v1/stores*       | List all stores.                                         | [POST v1/stores](#post-v1stores--list-orders)       |
 
 
 # Reading this document
@@ -331,8 +332,52 @@ If creation is successful, a **`"201 Created"`** response is returned along with
 }
 ```
 
+# **GET v1/stores** – List stores
 
-# Errors
+## Response
+| Field                | Type             | Description                                                                                                                                                                                      |
+| -------------------- | ---------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **`id`**             | int              | ID of the store.                                                                                                                                                                                 |
+| **`name`**           | string           | Store name.                                                                                                                                                                                     |
+| **`address`**        | *address* object | Address of the store (see [#Address object](#address-object)).                                                                                                                                                                                |
+
+
+**Example response**
+
+```json
+{
+  "id": 34,
+  "name": "SAKA Vantaa",
+  "address": {
+    "address": "Virkatie 7",
+    "zip": "01510",
+    "city": "VANTAA"
+  }
+},
+{
+  "id": 35,
+  "name": "SAKA Espoo Koskelo",
+  "address": {
+    "address": "Koskelontie 15",
+    "zip": "02920",
+    "city": "Espoo"
+  }
+},
+{
+  "id": 36,
+  "name": "SAKA Tuusula",
+  "address": {
+    "address": "Hiekkamäentie 5",
+    "zip": "04300",
+    "city": "Tuusula"
+  }
+}
+```
+
+
+# Other details
+
+## Errors
 | Error message           | Code | Description                                                                                                                                                                   |
 | ----------------------- | ---- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | *Unprocessable Entity*  | 422  | Invalid input data. Make sure that all input fields follow given validation rules and all required fields are given.                                                          |
@@ -342,10 +387,6 @@ If creation is successful, a **`"201 Created"`** response is returned along with
 | *Internal Server Error* | 500  | This is a sign of an error in our end and should never happen. If it happens though, please contact us.                                                                       |
 
 If any of these errors appear even though they shouldn’t, please contact Ninjami: https://ninjami.com/contact.
-
-
-# Other details
-
 
 ## Datetime
 
