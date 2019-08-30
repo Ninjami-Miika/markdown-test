@@ -13,7 +13,7 @@ To use the API, a valid *access token* is needed. It can be retrieved from authe
 | `GET`    | *v1/orders/\<id>*  | Show details of a order.                                   | [GET v1/orders/\<id>](#get-v1ordersid--show-order-details)   |
 | `POST`   | *v1/orders/offer* | Get a starting price for a drive for given route and time. | [POST v1/orders/offer](#post-v1ordersoffer--get-a-starting-price) |
 | `POST`   | *v1/orders*       | Store a new order.                                         | [POST v1/orders](#post-v1orders--create-order)       |
-| `GET`   | *v1/stores*       | List all stores.                                         | [POST v1/stores](#post-v1stores--list-orders)       |
+| `GET`   | *v1/stores*       | List all stores.                                         | [GET v1/stores](#get-v1stores--list-orders)       |
 
 
 # Reading this document
